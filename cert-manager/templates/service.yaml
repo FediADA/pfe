@@ -18,7 +18,7 @@ metadata:
     {{- toYaml . | nindent 4 }}
     {{- end }}
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   ports:
   - protocol: TCP
     port: 9402
